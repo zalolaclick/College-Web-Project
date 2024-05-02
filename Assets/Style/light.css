@@ -50,3 +50,9 @@ body {
   background-color: #1b9900;
   color: #fff7e3;
 }
+
+#fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
