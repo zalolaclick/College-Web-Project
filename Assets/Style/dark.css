@@ -17,7 +17,7 @@ body {
 }
 
 .navbar ul li p {
-  background-color:#1b9900;
+  background-color: #1b9900;
   color: #00081c;
   border: solid;
   border-color: #1b9900;
@@ -38,12 +38,12 @@ body {
 
 .navbar ul li a:link {
   background-color: #00081c;
-  color:#1b9900;
+  color: #1b9900;
 }
 
 .navbar ul li a:visited {
   background-color: #00081c;
-  color:#1b9900;
+  color: #1b9900;
 }
 
 .navbar ul li a:hover {
@@ -52,7 +52,7 @@ body {
 }
 
 button:after {
-  display: none!important;
+  display: none !important;
 }
 
 #fixed-button {
