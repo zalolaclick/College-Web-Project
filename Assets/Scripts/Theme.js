@@ -9,10 +9,10 @@ function toggleTheme() {
   if (isDarkTheme) {
     lightTheme.disabled = true;
     darkTheme.disabled = false;
-    themeButtonImage.src = '..\\..\\Assets\\Images\\Buttons\\Theme-Dark.png';
+    themeButtonImage.src = '../../Assets/Images/Buttons/Theme-Dark.png';
   } else {
     lightTheme.disabled = false;
     darkTheme.disabled = true;
-    themeButtonImage.src = '..\\..\\Assets\\Images\\Buttons\\Theme-Light.png';
+    themeButtonImage.src = '../../Assets/Images/Buttons/Theme-Light.png';
   }
 }
