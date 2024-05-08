@@ -60,3 +60,8 @@ button:after {
   bottom: 20px;
   right: 20px;
 }
+
+button {
+  background-color: #fff7e3;
+  border: none;"
+}
