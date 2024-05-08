@@ -6,6 +6,14 @@
   <link id="light-theme" rel="stylesheet" href="..\..\Assets\Style\light.css">
   <link id="dark-theme" rel="stylesheet" href="..\..\Assets\Style\dark.css" disabled>
   <script src="..\..\Assets/Scripts/Theme.js"></script>
+  <script>
+    window.onload = function() {
+      var theme = localStorage.getItem("theme");
+      if (theme == "dark") {
+        toggleTheme();
+      }
+    };
+  </script>
 </head>
 
 <body>

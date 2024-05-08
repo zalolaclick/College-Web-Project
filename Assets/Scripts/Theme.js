@@ -3,16 +3,19 @@ var isDarkTheme = false;
 function toggleTheme() {
   var lightTheme = document.getElementById('light-theme');
   var darkTheme = document.getElementById('dark-theme');
+  var themeButtonImage = document.getElementById("themeButtonImage");
   
   isDarkTheme = !isDarkTheme;
   
   if (isDarkTheme) {
     lightTheme.disabled = true;
     darkTheme.disabled = false;
-    document.getElementById('themeButtonImage').src = "../../Assets/Images/Buttons/Theme-Light.png";
+    themeButtonImage.src = "../../Assets/Images/Buttons/Theme-Light.png";
+    localStorage.setItem("theme", "dark");
   } else {
     lightTheme.disabled = false;
     darkTheme.disabled = true;
-    document.getElementById('themeButtonImage').src = "../../Assets/Images/Buttons/Theme-Dark.png";
+    themeButtonImage.src = "../../Assets/Images/Buttons/Theme-Dark.png";
+    localStorage.setItem("theme", "light");
   };
 };
