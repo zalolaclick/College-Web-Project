@@ -51,6 +51,10 @@ body {
   color: #fff7e3;
 }
 
+button:after {
+  display: none!important;
+}
+
 #fixed-button {
   position: fixed;
   bottom: 20px;
