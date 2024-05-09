@@ -1,1 +1,45 @@
-<meta http-equiv="refresh" content="0; url=https://github.com/zalolaclick/College-Web-Project/blob/b8631a417b602628919170fa3df863969feda0f5/Pages/home/index.html">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Company.Co - Home</title>
+  <link rel="icon" type="image/x-icon" href="..\..\Assets\Icons\Favicon.ico">
+  <link id="light-theme" rel="stylesheet" href="..\..\Assets\Style\light.css">
+  <link id="dark-theme" rel="stylesheet" href="..\..\Assets\Style\dark.css" disabled>
+  <script src="..\..\Assets/Scripts/Theme.js"></script>
+  <script>
+    window.onload = function() {
+      var theme = localStorage.getItem("theme");
+      if (theme == "dark") {
+        toggleTheme();
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li>
+        <img src="Assets\Images\Logo\Logo-3.png" alt="Company.Co Logo" />
+      </li>
+      <li>
+        <p>Home</p>
+      </li>
+      <li>
+        <a href="about\index.html">About</a>
+      </li>
+      <li>
+        <a href="job\index.html">Jobs Available!</a>
+      </li>
+      <li>
+        <a href="contact\index.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <button id="fixed-button" onclick="toggleTheme()">
+    <img id="themeButtonImage" src="..\..\Assets\Images\Buttons\Theme-Dark.png" alt="Theme Button">
+  </button>
+</body>
+
+</html>
