@@ -10,12 +10,12 @@ function toggleTheme() {
   if (isDarkTheme) {
     lightTheme.disabled = true;
     darkTheme.disabled = false;
-    themeButtonImage.src = "../../Assets/Images/Buttons/Theme-Light.png";
+    themeButtonImage.src = "../docs/assets/Images/Buttons/Theme-Light.png";
     localStorage.setItem("theme", "dark");
   } else {
     lightTheme.disabled = false;
     darkTheme.disabled = true;
-    themeButtonImage.src = "../../Assets/Images/Buttons/Theme-Dark.png";
+    themeButtonImage.src = "../docs/assets/Images/Buttons/Theme-Dark.png";
     localStorage.setItem("theme", "light");
   };
 };
