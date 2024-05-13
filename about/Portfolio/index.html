@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Company.Co - About</title>
+  <link rel="icon" type="image/x-icon" href="..\..\docs\assets\Icons\Favicon.ico">
+  <link id="light-theme" rel="stylesheet" href="..\..\docs\assets\Style\light.css">
+  <link id="dark-theme" rel="stylesheet" href="..\..\docs\assets\Style\dark.css" disabled>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+  <script src="..\..\docs\assets/Scripts/Theme.js"></script>
+  <script>
+    window.onload = function() {
+      var theme = localStorage.getItem("theme");
+      if (theme == "dark") {
+        toggleTheme();
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li>
+        <img src="..\..\docs\assets\Images\Logo\Logo-4.png" alt="Company.Co Logo">
+      </li>
+      <li>
+        <a href="..\..\index.html">Home</a>
+      </li>
+      <li>
+        <p>
+            <pre style="border: solid;">--|> Portfolio <|--</pre>
+        </p>
+      </li>
+      <li>
+        <a href="..\..\job\index.html">Jobs Available!</a>
+      </li>
+      <li>
+        <a href="..\..\contact\index.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <button id="fixed-button" onclick="toggleTheme()">
+    <img id="themeButtonImage" src="..\..\docs\assets\Images\Buttons\Theme-Dark.png" alt="Theme Button">
+  </button>
+</body>
+
+</html>
