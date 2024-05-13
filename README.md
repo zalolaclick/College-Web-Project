@@ -17,7 +17,7 @@ This project is a website for a fake web development company, created as part of
 
 ## Project Status
 
-Currently, the project has two finished pages: Home and Contact. The remaining pages (About, Services, and Portfolio) are still in progress.
+Currently, the project has two finished pages: Home and Contact. The remaining pages (About, Jobs, Apply and Portfolio) are still in progress.
 
 ## How to Run
 
