@@ -6,50 +6,77 @@ body {
   font-family: 'Sono', monospace;
 }
 
+.navbar {
+  justify-content: center;
+  text-align: center;
+}
+
 .navbar ul {
+  background-color: #00081c;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: auto;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: solid;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.navbar ul li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar ul li img {
   display: block;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .navbar ul li p {
   background-color: #1b9900;
-  color: #fff7e3;
+  color: #00081c;
   border: solid;
   border-color: #1b9900;
   display: flex;
   justify-content: center;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .navbar ul li a {
   border: solid;
   border-color: #1b9900;
   display: flex;
-  justify-content: center;
   padding: 0;
   margin: 0;
+  justify-content: center;
+  width: 100%;
 }
 
 .navbar ul li a:link {
-  background-color: #fff7e3;
+  background-color: #00081c;
   color: #1b9900;
 }
 
 .navbar ul li a:visited {
-  background-color: #fff7e3;
+  background-color: #00081c;
   color: #1b9900;
 }
 
 .navbar ul li a:hover {
   background-color: #1b9900;
-  color: #fff7e3;
+  color: #00081c;
 }
 
 .contact {
@@ -67,6 +94,7 @@ body {
   justify-content: center;
   padding: 0;
   margin: 0;
+  color: #1b9900;
   border: solid;
   border-color: #1b9900;
   border-radius: 12px;
@@ -81,7 +109,7 @@ body {
 }
 
 .contact ul li a {
-  background-color: #fff7e3;
+  background-color: #00081c;
   color: #1b9900;
   border: solid;
   border-color: #1b9900;
@@ -95,7 +123,7 @@ body {
 
 .contact ul li h1 {
   background-color: #1b9900;
-  color: #fff7e3;
+  color: #00081c;
   border: solid;
   border-color: #1b9900;
   font-size: xx-large;
