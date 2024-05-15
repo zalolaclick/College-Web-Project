@@ -39,14 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navbar ul li:first-child {
-  border: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-right: auto;
+  width: 100%;
 }
 
 .navbar ul li img {
