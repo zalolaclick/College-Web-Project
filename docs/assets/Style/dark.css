@@ -161,10 +161,10 @@ button {
   border: none;
 }
 
-.sono-<uniquifier> {
+.sono-MyFont {
   font-family: "Sono", monospace;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "MONO" 1;
