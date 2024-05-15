@@ -3,13 +3,13 @@
 
 <head>
   <title>Company.Co - About</title>
-  <link rel="icon" type="image/x-icon" href="..\docs\assets\Icons\Favicon.ico">
-  <link id="light-theme" rel="stylesheet" href="..\docs\assets\Style\light.css">
-  <link id="dark-theme" rel="stylesheet" href="..\docs\assets\Style\dark.css" disabled>
+  <link rel="icon" type="image/x-icon" href="../docs/assets/Icons/Favicon.ico">
+  <link id="light-theme" rel="stylesheet" href="../docs/assets/Style/light.css">
+  <link id="dark-theme" rel="stylesheet" href="../docs/assets/Style/dark.css" disabled>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
-  <script src="..\docs\assets/Scripts/Theme.js"></script>
+  <script src="../docs/assets/Scripts/Theme.js"></script>
   <script>
     window.onload = function() {
       var theme = localStorage.getItem("theme");
@@ -22,26 +22,28 @@
 
 <body>
   <div class="navbar">
-    <ul>
-      <li>
-        <img src="..\docs\assets\Images\Logo\Logo-4.png" alt="Company.Co Logo">
+    <ul style="border-radius: 0; border-bottom: none;">
+      <li style="border: none;">
+        <img src="../docs/assets/Images/Logo/Logo-4.png" alt="Company.Co Logo">
       </li>
+    </ul>
+    <ul style="border-top: none;">
       <li>
-        <a href="..\index.html">Home</a>
+        <a href="../index.html">Home</a>
       </li>
       <li>
         <p>About</p>
       </li>
       <li>
-        <a href="..\job\index.html">Jobs</a>
+        <a href="../job/index.html">Jobs</a>
       </li>
       <li>
-        <a href="..\contact\index.html">Contact</a>
+        <a href="../contact/index.html">Contact</a>
       </li>
     </ul>
   </div>
   <button id="fixed-button" onclick="toggleTheme()">
-    <img id="themeButtonImage" src="..\docs\assets\Images\Buttons\Theme-Dark.png" alt="Theme Button">
+    <img id="themeButtonImage" src="../docs/assets/Images/Buttons/Theme-Dark.png" alt="Theme Button">
   </button>
 </body>
 
