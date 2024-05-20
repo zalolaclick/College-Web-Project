@@ -109,7 +109,7 @@ function toggleTheme() {
     console.log("Theme Changing Button Image is: " + themeButtonImage.src);
     localStorage.setItem("theme", "dark");
     // Elements specific to: Home.
-    TitleImage.src = "docs/assets/Images/Home/Home-Title-New-Dark.png"; // !This currently does not work even though it has in the past!
+    TitleImage.src = "docs/assets/Images/Home/Home-Title-New-Dark.png";
     console.log("Home's Title changed to: " + TitleImage.src);
 // For pages: Home // Changes to light theme.
   } else {
@@ -121,7 +121,6 @@ function toggleTheme() {
     console.log("Theme Changing Button Image is: " + themeButtonImage.src);
     localStorage.setItem("theme", "light");
     // Elements specific to: Home.
-    TitleImage.src = "docs/assets/Images/Home/Home-Title-New-Light.png"; // !This currently does not work even though it has in the past!
-    console.log("Home's Title changed to: " + TitleImage.src);
+    TitleImage.src = "docs/assets/Images/Home/Home-Title-New-Light.png";
   };
 };
