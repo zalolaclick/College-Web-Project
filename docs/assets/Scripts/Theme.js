@@ -12,9 +12,9 @@ console.log("Variable PhoneTheme Loaded");
 
 // To change the theme of the website.
 function toggleTheme() {
-  var lightTheme = document.getElementById('light-theme');
+  var lightTheme = document.getElementById("light-theme");
   console.log("Light Theme Loaded");
-  var darkTheme = document.getElementById('dark-theme');
+  var darkTheme = document.getElementById("dark-theme");
   console.log("Dark Theme Loaded");
   var themeButtonImage = document.getElementById("themeButtonImage");
   console.log("Theme Changer Button Loaded");
@@ -22,24 +22,24 @@ function toggleTheme() {
   console.log("PageTheme: ", PageTheme);
   console.log("Determining Page:");
   // Sets variables that a specific to certain pages.
-  if (PageTheme == ("home")) {
+  if (PageTheme == "home") {
     TitleImage = document.getElementById("TitleImage");
     console.log("TitleImage loaded");
-  } else if (PageTheme == ("about")) {
+  } else if (PageTheme == "about") {
     placeholder1 = 0;
-  } else if (PageTheme == ("portfolio")) {
+  } else if (PageTheme == "portfolio") {
     placeholder1 = 0;
-  } else if (PageTheme == ("job")) {
+  } else if (PageTheme == "job") {
     placeholder1 = 0;
-  } else if (PageTheme == ("apply")) {
+  } else if (PageTheme == "apply") {
     placeholder1 = 0;
-  } else if (PageTheme == ("contact")) {
+  } else if (PageTheme == "contact") {
     PhoneTheme = document.getElementById("phone");
-  };
-  
+  }
+
   IsDarkTheme = !IsDarkTheme;
-  
-// For pages: About, Job, and Contact // Changes to dark theme.
+
+  // For pages: About, Job, and Contact // Changes to dark theme.
   if (IsDarkTheme && PageTheme != ("home" || "portfolio" || "apply")) {
     // Elements that appear on all pages.
     lightTheme.disabled = true;
@@ -58,8 +58,8 @@ function toggleTheme() {
       // Elements specific to: Contact.
       PhoneTheme.src = "../docs/assets/Images/Contact/Phone-Dark.png";
       console.log("Phone changed to: " + PhoneTheme.src);
-    };
-// For pages: About, Contact and Job // Changes to light theme.
+    }
+    // For pages: About, Contact and Job // Changes to light theme.
   } else if (PageTheme != ("home" || "portfolio" || "apply")) {
     // Elements that appear on all pages.
     lightTheme.disabled = false;
@@ -78,8 +78,8 @@ function toggleTheme() {
       // Elements specific to: Contact.
       PhoneTheme.src = "../docs/assets/Images/Contact/Phone-Light.png";
       console.log("Phone changed to: " + PhoneTheme.src);
-    };
-// For pages: Portfolio and Apply // Changes to dark theme.
+    }
+    // For pages: Portfolio and Apply // Changes to dark theme.
   } else if (IsDarkTheme && PageTheme != "home") {
     // Elements that appear on all pages.
     lightTheme.disabled = true;
@@ -89,7 +89,7 @@ function toggleTheme() {
     console.log("Theme Changing Button Image is: " + themeButtonImage.src);
     localStorage.setItem("theme", "dark");
     // !Both pages unfinished!
-// For pages: Portfolio and Apply // Changes to light theme.
+    // For pages: Portfolio and Apply // Changes to light theme.
   } else if (PageTheme != "home") {
     // Elements that appear on all pages.
     lightTheme.disabled = false;
@@ -99,7 +99,7 @@ function toggleTheme() {
     console.log("Theme Changing Button Image is: " + themeButtonImage.src);
     localStorage.setItem("theme", "light");
     // !Both pages unfinished!
-// For pages: Home // Changes to dark theme.
+    // For pages: Home // Changes to dark theme.
   } else if (IsDarkTheme) {
     // Elements that appear on all pages.
     lightTheme.disabled = true;
@@ -111,7 +111,7 @@ function toggleTheme() {
     // Elements specific to: Home.
     TitleImage.src = "docs/assets/Images/Home/Home-Title-New-Dark.png";
     console.log("Home's Title changed to: " + TitleImage.src);
-// For pages: Home // Changes to light theme.
+    // For pages: Home // Changes to light theme.
   } else {
     // Elements that appear on all pages.
     lightTheme.disabled = false;
@@ -122,5 +122,5 @@ function toggleTheme() {
     localStorage.setItem("theme", "light");
     // Elements specific to: Home.
     TitleImage.src = "docs/assets/Images/Home/Home-Title-New-Light.png";
-  };
-};
+  }
+}
