@@ -85,6 +85,61 @@ body {
   color: #00081c;
 }
 
+.about-block {
+  display: flex;
+  width: calc(720px + 50%);
+  height: calc(720px + 50%);
+  position: fixed;
+  z-index: 0;
+  align-self: center;
+  vertical-align: middle;
+}
+
+.about-block ul {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  align-self: center;
+  vertical-align: middle;
+  list-style-type: none;
+  flex-direction: column;
+  background-color: #00081c;
+  color: #1b9900;
+  border: solid;
+  border-radius: 10px;
+  border-color: #1b9900;
+  padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.about-block li {
+  display: flex;
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  vertical-align: middle;
+  flex-direction: column;
+}
+
+.about-block ul li h1 {
+  display: flex;
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.about-block ul li p {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .contact {
   position: absolute;
   top: 50%;
