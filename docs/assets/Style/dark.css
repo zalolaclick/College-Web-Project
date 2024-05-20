@@ -92,7 +92,7 @@ body {
   z-index: 0;
   align-self: center;
   vertical-align: middle;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .about-block ul {

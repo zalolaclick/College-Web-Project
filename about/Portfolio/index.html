@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html id="portfolio">
 <head>
-  <title>Company.Co - About</title>
-  <link rel="icon" type="image/x-icon" href="..\..\docs\assets\Icons\Favicon.ico">
-  <link id="light-theme" rel="stylesheet" href="..\..\docs\assets\Style\light.css">
-  <link id="dark-theme" rel="stylesheet" href="..\..\docs\assets\Style\dark.css" disabled>
+  <title>Company.Co - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="../../docs/assets/Icons/Favicon.ico">
+  <link id="light-theme" rel="stylesheet" href="../../docs/assets/Style/light.css">
+  <link id="dark-theme" rel="stylesheet" href="../../docs/assets/Style/dark.css" disabled>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
-  <script src="..\..\docs\assets/Scripts/Theme.js"></script>
+  <script src="../../docs/assets/Scripts/Theme.js"></script>
   <script>
     window.onload = function() {
+      // Check if the system theme is set to dark mode
+      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      // If the system theme is set to dark mode, enable the dark theme
+      if (prefersDarkMode) {
+        toggleTheme();
+      }
+
+      // Existing code to handle theme changes based on user preference
       var theme = localStorage.getItem("theme");
       if (theme == "dark") {
         toggleTheme();
@@ -22,29 +30,41 @@
 
 <body>
   <div class="navbar">
+    <ul style="border-radius: 0; border-bottom: none;">
+      <li style="border: none;">
+        <img src="../../docs/assets/Images/Logo/Logo-4.png" alt="Company.Co Logo">
+      </li>
+    </ul>
+    <ul style="border-top: none;">
+      <li>
+        <a href="../../index.html">Home</a>
+      </li>
+      <li>
+        <p>Portfolio</p>
+      </li>
+      <li>
+        <a href="../../job/index.html">Jobs</a>
+      </li>
+      <li>
+        <a href="../../contact/index.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="about-block">
     <ul>
+      <li><h1>What is this company for?</h1></li>
+      <li><p>This company is to help web developers that are just stating out and helps finds work, jobs and ensures that they keep on improving and learning.</p></li>
+      <li><p>The company get loads of employment opportunities and work that allows our workers to continue improving.</p></li>
+      <li><p>The company also has lots of learning resources such as books, videos, lectures, abd practicals.</p></li>
+      <li><h1>On improving artificial intelligence (AI).</h1></li>
+      <li><p>The company also helps improve AI and ensures that people get the best experience with them.</p></li>
       <li>
-        <img src="..\..\docs\assets\Images\Logo\Logo-4.png" alt="Company.Co Logo">
-      </li>
-      <li>
-        <a href="..\..\index.html">Home</a>
-      </li>
-      <li>
-        <p>
-            <pre style="border: solid;">--|> Portfolio <|--</pre>
-        </p>
-      </li>
-      <li>
-        <a href="..\..\job\index.html">Jobs Available!</a>
-      </li>
-      <li>
-        <a href="..\..\contact\index.html">Contact</a>
+        <a href="../index.html"><img src="../../docs/assets/Images/Buttons/Portfolio-Proto-1.png.png" alt="About Button"></a>
       </li>
     </ul>
   </div>
   <button id="fixed-button" onclick="toggleTheme()">
-    <img id="themeButtonImage" src="..\..\docs\assets\Images\Buttons\Theme-Dark.png" alt="Theme Button">
+    <img id="themeButtonImage" src="../../docs/assets/Images/Buttons/Theme-Dark.png" alt="Theme Button">
   </button>
 </body>
-
 </html>

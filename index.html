@@ -11,6 +11,15 @@
   <script src="docs/assets/Scripts/Theme.js"></script>
   <script>
     window.onload = function() {
+      // Check if the system theme is set to dark mode
+      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      // If the system theme is set to dark mode, enable the dark theme
+      if (prefersDarkMode) {
+        toggleTheme();
+      }
+
+      // Existing code to handle theme changes based on user preference
       var theme = localStorage.getItem("theme");
       if (theme == "dark") {
         toggleTheme();
