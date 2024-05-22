@@ -86,30 +86,30 @@ body {
 
 .about-block {
   display: flex;
-  width: calc(720px + 50%);
+  width: 100%;
   height: calc(720px + 50%);
-  position: relative;
+  position: fixed;
   z-index: 0;
   align-self: center;
   vertical-align: middle;
-  justify-content: center;
 }
 
 .about-block ul {
   display: flex;
   position: relative;
-  z-index: 2;
+  z-index: 0;
   align-self: center;
   vertical-align: middle;
   list-style-type: none;
   flex-direction: column;
-  margin: 20%;
   background-color: #fff7e3;
   color: #1b9900;
   border: solid;
   border-radius: 10px;
   border-color: #1b9900;
   padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .about-block li {

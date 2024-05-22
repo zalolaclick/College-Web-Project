@@ -8,24 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
-  <script src="../../docs/assets/Scripts/Theme.js"></script>
-  <script>
-    window.onload = function() {
-      // Check if the system theme is set to dark mode
-      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-      // If the system theme is set to dark mode, enable the dark theme
-      if (prefersDarkMode) {
-        toggleTheme();
-      }
-
-      // Existing code to handle theme changes based on user preference
-      var theme = localStorage.getItem("theme");
-      if (theme == "dark") {
-        toggleTheme();
-      }
-    };
-  </script>
 </head>
 
 <body>
@@ -52,12 +34,26 @@
   </div>
   <div class="about-block">
     <ul>
-      <li><h1>What is this company for?</h1></li>
-      <li><p>This company is to help web developers that are just stating out and helps finds work, jobs and ensures that they keep on improving and learning.</p></li>
-      <li><p>The company get loads of employment opportunities and work that allows our workers to continue improving.</p></li>
-      <li><p>The company also has lots of learning resources such as books, videos, lectures, abd practicals.</p></li>
-      <li><h1>On improving artificial intelligence (AI).</h1></li>
-      <li><p>The company also helps improve AI and ensures that people get the best experience with them.</p></li>
+      <li><h1>Who is currently working here?</h1></li>
+      <li>
+        <img id="Employee1" src="../../docs/assets/Images/Portfolio/Employee-1-Dark.png" alt="James' Photo">
+        <p>James:
+          James is a seasoned software engineer with a passion for building scalable and efficient systems. With over 5 years of experience in the industry, he has developed a strong expertise in cloud computing and DevOps. In his free time, James enjoys contributing to open-source projects and exploring new technologies.</p>
+      </li>
+      <li>
+        <img id="Employee2" src="../../docs/assets/Images/Portfolio/Employee-2-Dark.png" alt="Mark's Photo">
+        <p>Mark:
+          Mark is a creative and innovative UI/UX designer with a keen eye for detail. With a background in graphic design, he brings a unique perspective to the world of digital product design. Mark is always looking for ways to improve user experience and is passionate about creating intuitive and visually stunning interfaces.</p>
+      </li>
+      <li>
+        <img id="Employee3" src="../../docs/assets/Images/Portfolio/Employee-3-Dark.png" alt="Steven's Photo">
+        <p>Steven:
+          Steven is a data scientist with a strong analytical mind and a love for numbers. With a Ph.D. in statistics, he has developed a deep understanding of machine learning and data visualization. Steven is always looking for new ways to apply data-driven insights to real-world problems and is passionate about communicating complex ideas in a clear and concise manner.</p>
+      </li>
+      <li>
+        <img id="Employee4" src="../../docs/assets/Images/Portfolio/Employee-4-Dark.png" alt="Moss' Photo">
+        <p>Moss: He is a monster that somehow knows computers and got an excellent job because of it. He works as a Network Engineer.</p>
+      </li>
       <li>
         <a href="../index.html"><img src="../../docs/assets/Images/Buttons/Portfolio-Proto-1.png.png" alt="About Button"></a>
       </li>
@@ -67,4 +63,24 @@
     <img id="themeButtonImage" src="../../docs/assets/Images/Buttons/Theme-Dark.png" alt="Theme Button">
   </button>
 </body>
+<footer>
+  <script src="../../docs/assets/Scripts/Theme.js"></script>
+  <script>
+    window.onload = function() {
+      // Check if the system theme is set to dark mode
+      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      // If the system theme is set to dark mode, enable the dark theme
+      if (prefersDarkMode) {
+        toggleTheme();
+      }
+
+      // Existing code to handle theme changes based on user preference
+      var theme = localStorage.getItem("theme");
+      if (theme == "dark") {
+        toggleTheme();
+      }
+    };
+  </script>
+</footer>
 </html>

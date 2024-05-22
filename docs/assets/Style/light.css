@@ -87,7 +87,7 @@ body {
 
 .about-block {
   display: flex;
-  width: calc(720px + 50%);
+  width: 100%;
   height: calc(720px + 50%);
   position: fixed;
   z-index: 0;
