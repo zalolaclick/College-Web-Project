@@ -5,10 +5,6 @@
 // Loads either variables that don't need change or variables that are specific to certain pages.
 var IsDarkTheme = false;
 console.log("Variable IsDarkTheme Loaded");
-var TitleImage; // Unset because this is not universal to all pages.
-console.log("Variable TitleImage Ready");
-var PhoneTheme; // Unset because this is not universal to all pages.
-console.log("Variable PhoneTheme Ready");
 
 // To change the theme of the website.
 function toggleTheme() {
@@ -22,11 +18,12 @@ function toggleTheme() {
   console.log("PageTheme: ", PageTheme);
   // Sets variables that a specific to certain pages.
   if (PageTheme == "home") {
-    TitleImage = document.getElementById("TitleImage");
+    var TitleImage = document.getElementById("TitleImage");
     console.log("TitleImage loaded");
   } else if (PageTheme == "about") {
-    placeholder1 = 0;
+    var PortfolioButton = document.getElementById("Portfolio-Button");
   } else if (PageTheme == "portfolio") {
+    var PortfolioButton = document.getElementById("Portfolio-Button");
     var Employee1 = document.getElementById("Employee1");
     var Employee2 = document.getElementById("Employee2");
     var Employee3 = document.getElementById("Employee3");
@@ -36,7 +33,7 @@ function toggleTheme() {
   } else if (PageTheme == "apply") {
     placeholder1 = 0;
   } else if (PageTheme == "contact") {
-    PhoneTheme = document.getElementById("phone");
+    var PhoneTheme = document.getElementById("phone");
   }
 
   IsDarkTheme = !IsDarkTheme;
@@ -52,7 +49,7 @@ function toggleTheme() {
     localStorage.setItem("theme", "dark");
     if (PageTheme == "about") {
       // Elements specific to: About.
-      var placeholder1; // !Unfinished Page!
+      PortfolioButton.src = "../docs/assets/Images/Portfolio/Button/Portfolio-About-Dark.png";
     } else if (PageTheme == "job") {
       // Elements specific to: Job.
       var placeholder1; // !Unfinished Page!
@@ -72,7 +69,7 @@ function toggleTheme() {
     localStorage.setItem("theme", "light");
     if (PageTheme == "about") {
       // Elements specific to: About.
-      var placeholder1 = 0; // !Unfinished Page!
+      PortfolioButton.src = "../docs/assets/Images/Portfolio/Button/Portfolio-About.png";
     } else if (PageTheme == "job") {
       // Elements specific to: Job.
       var placeholder1 = 0; // !Unfinished Page!
@@ -92,10 +89,11 @@ function toggleTheme() {
     localStorage.setItem("theme", "dark");
     if (PageTheme == "portfolio") {
       // Elements specific to: Portfolio.
-      Employee1.src = "../../docs/assets/Images/Portfolio/Employee1.png";
-      Employee2.src = "../../docs/assets/Images/Portfolio/Employee2.png";
-      Employee3.src = "../../docs/assets/Images/Portfolio/Employee3.png";
-      Employee4.src = "../../docs/assets/Images/Portfolio/Employee4.png";
+      PortfolioButton.src = "../../docs/assets/Images/Portfolio/Button/Portfolio-About-Dark.png";
+      Employee1.src = "../../docs/assets/Images/Portfolio/Employee-1.png";
+      Employee2.src = "../../docs/assets/Images/Portfolio/Employee-2.png";
+      Employee3.src = "../../docs/assets/Images/Portfolio/Employee-3.png";
+      Employee4.src = "../../docs/assets/Images/Portfolio/Employee-4.png";
     }
     // For pages: Portfolio and Apply // Changes to light theme.
   } else if (PageTheme != "home") {
@@ -108,10 +106,11 @@ function toggleTheme() {
     localStorage.setItem("theme", "light");
     if (PageTheme == "portfolio") {
       // Elements specific to: Portfolio.
-      Employee1.src = "../../docs/assets/Images/Portfolio/Employee1-Dark.png";
-      Employee2.src = "../../docs/assets/Images/Portfolio/Employee2-Dark.png";
-      Employee3.src = "../../docs/assets/Images/Portfolio/Employee3-Dark.png";
-      Employee4.src = "../../docs/assets/Images/Portfolio/Employee4-Dark.png";
+      PortfolioButton.src = "../../docs/assets/Images/Portfolio/Button/Portfolio-About.png";
+      Employee1.src = "../../../docs/assets/Images/Portfolio/Employee-1-Dark.png";
+      Employee2.src = "../../../docs/assets/Images/Portfolio/Employee-2-Dark.png";
+      Employee3.src = "../../../docs/assets/Images/Portfolio/Employee-3-Dark.png";
+      Employee4.src = "../../../docs/assets/Images/Portfolio/Employee-4-Dark.png";
     }
     // For pages: Home // Changes to dark theme.
   } else if (IsDarkTheme && PageTheme == "home") {

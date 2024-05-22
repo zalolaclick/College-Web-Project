@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Sono", monospace;
+  overflow-y: auto;
 }
 
 .navbar {
@@ -41,6 +42,7 @@ body {
   align-items: center;
   width: 100%;
 }
+
 .navbar ul li img {
   display: flex;
   margin: 0 auto;
@@ -88,7 +90,7 @@ body {
   display: flex;
   width: 100%;
   height: calc(720px + 50%);
-  position: fixed;
+  position: relative;
   z-index: 0;
   align-self: center;
   vertical-align: middle;
@@ -110,6 +112,7 @@ body {
   padding: 10px;
   margin-left: 25%;
   margin-right: 25%;
+  margin-top: 280px;
 }
 
 .about-block li {
@@ -137,6 +140,11 @@ body {
   align-self: center;
   vertical-align: middle;
   text-align: center;
+}
+
+.about-block li img {
+  display: block;
+  align-self: center;
 }
 
 .contact {
