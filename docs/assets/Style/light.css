@@ -7,6 +7,31 @@ body {
   overflow-y: auto;
 }
 
+a {
+  display: flex;
+  padding: 5px;
+  margin: 0;
+  justify-content: center;
+  width: fit-content;
+  border: solid;
+  border-color: #1b9900;
+}
+
+a:link {
+  background-color: #00081c;
+  color: #1b9900;
+}
+
+a:visited {
+  background-color: #00081c;
+  color: #1b9900;
+}
+
+a:hover {
+  background-color: #1b9900;
+  color: #00081c;
+}
+
 .navbar {
   justify-content: center;
   text-align: center;
@@ -200,6 +225,29 @@ body {
   justify-content: center;
   padding: 10px;
   margin: 0;
+}
+
+.job {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  z-index: 0;
+  margin-top: 240px;
+  margin-left: 13%;
+  text-align: center;
+  width: 75%;
+}
+
+.job ul {
+  list-style-type: none;
+}
+
+.job ul li {
+  list-style-type: none;
+}
+
+.job ul li a {
+  text-align: center;
 }
 
 img[alt="Home - Title _ It says Company.Co and has to logo next to it."] {
