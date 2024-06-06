@@ -13,7 +13,6 @@ This project is a website for a fake web development company, created as part of
 * HTML5
 * CSS3
 * JavaScript
-* Bootstrap
 
 ## Project Status
 
